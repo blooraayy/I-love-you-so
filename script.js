@@ -141,6 +141,15 @@ var init = function () {
     loop();
 };
 
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        let message = document.getElementById("message");
+        if (message) {
+            message.style.opacity = "1"
+        }
+    }, 3000)
+});
+
 var s = document.readyState;
 if (s === 'complete' || s === 'loaded' || s === 'interactive') init();
 else document.addEventListener('DOMContentLoaded', init, false);
