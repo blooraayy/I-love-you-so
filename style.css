@@ -1,0 +1,22 @@
+canvas {
+  position: absolute;
+  left:0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.2);
+}
+
+#message {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 2.5em; /* Aumenta el tamaño si quieres que se vea más grande */
+  color: #FF3B3F;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Aumenta el efecto de sombra */
+  font-family: "Arial Black", sans-serif; /* Usa Arial Black en lugar de Arial normal */
+  font-weight: bold; /* Refuerza el peso de la fuente */
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
